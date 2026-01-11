@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narayana Business School Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- THEME SETTINGS --- */
+        :root {
+            /* Logo se match karta hua Purple color */
+            --primary-color: #4A148C; 
+            --secondary-color: #7c43bd;
+            --text-color: #333;
+            --bg-color: #f0f2f5;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        /* --- Header with Building Image --- */
+        .header {
+            /* Building image set as background */
+            background: linear-gradient(rgba(74, 20, 140, 0.5), rgba(74, 20, 140, 0.7)), url('image_1.png') no-repeat center center/cover;
+            height: 160px;
+            position: relative;
+        }
+
+        /* --- Logo Image --- */
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            background-color: #fff;
+            /* Logo pura dikhe isliye rounded square rakha hai */
+            border-radius: 15px; 
+            border: 5px solid #fff;
+            object-fit: contain; /* Pura logo fit karega */
+            margin-top: -80px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 2;
+        }
+
+        .info {
+            padding: 15px 20px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 10px 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .designation {
+            font-size: 16px;
+            color: #555;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* --- ACTION BUTTONS --- */
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .action-btn {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 22px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(74, 20, 140, 0.3);
+        }
+
+        .action-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(74, 20, 140, 0.4);
+        }
+
+        /* --- DETAILS LIST --- */
+        .details-list {
+            list-style: none;
+            padding: 0 30px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .details-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .details-list li:last-child {
+            border-bottom: none;
+        }
+
+        .details-list i {
+            color: var(--primary-color);
+            width: 35px;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .details-list a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="header"></div>
+
+        <img src="image_0.png" alt="Narayana Business School Logo" class="profile-img">
+
+        <div class="info">
+            <h1 class="name">NARAYANA BUSINESS SCHOOL</h1>
+            <p class="designation">Learn | Lead | Transform</p>
+        </div>
+
+        <div class="actions">
+            <a href="tel:+918401717597" class="action-btn" title="Call Now"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://wa.me/918401717597" class="action-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:dabgardivyesh@gmail.com" class="action-btn" title="Send Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://maps.app.goo.gl/ipy5hqigREnFPY338" target="_blank" class="action-btn" title="View Location"><i class="fas fa-map-marked-alt"></i></a>
+        </div>
+
+        <ul class="details-list">
+            <li>
+                <i class="fas fa-mobile-alt"></i> 
+                <a href="tel:+918401717597">+91 84017 17597</a>
+            </li>
+            <li>
+                <i class="fas fa-envelope-open-text"></i> 
+                <a href="mailto:dabgardivyesh@gmail.com">dabgardivyesh@gmail.com</a>
+            </li>
+            <li>
+                <i class="fas fa-location-dot"></i> 
+                <a href="https://maps.app.goo.gl/ipy5hqigREnFPY338" target="_blank">Tap to view College Location</a>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
