@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narayana Business School Card</title>
+    <title>Divyesh Dabgar - NBS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* --- THEME SETTINGS --- */
         :root {
-            /* Logo se match karta hua Purple color */
             --primary-color: #4A148C; 
             --secondary-color: #7c43bd;
             --text-color: #333;
@@ -36,26 +35,22 @@
             border-radius: 20px;
             overflow: hidden;
             text-align: center;
-            padding-bottom: 25px;
+            padding-bottom: 30px;
         }
 
-        /* --- Header with Building Image --- */
         .header {
-            /* Building image set as background */
             background: linear-gradient(rgba(74, 20, 140, 0.5), rgba(74, 20, 140, 0.7)), url('image_1.png') no-repeat center center/cover;
             height: 160px;
             position: relative;
         }
 
-        /* --- Logo Image --- */
         .profile-img {
             width: 140px;
             height: 140px;
             background-color: #fff;
-            /* Logo pura dikhe isliye rounded square rakha hai */
             border-radius: 15px; 
             border: 5px solid #fff;
-            object-fit: contain; /* Pura logo fit karega */
+            object-fit: contain;
             margin-top: -80px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.15);
             position: relative;
@@ -63,26 +58,36 @@
         }
 
         .info {
-            padding: 15px 20px;
+            padding: 10px 20px;
         }
 
-        .name {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--primary-color);
-            margin: 10px 0 5px 0;
+        .school-name {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 0 0;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .person-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 5px 0;
         }
 
         .designation {
             font-size: 16px;
             color: #555;
             font-weight: 500;
-            margin: 0;
+            background-color: #f3e5f5;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 5px;
         }
 
-        /* --- ACTION BUTTONS --- */
         .actions {
             display: flex;
             justify-content: center;
@@ -93,33 +98,27 @@
         .action-btn {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            width: 55px;
-            height: 55px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            font-size: 22px;
+            font-size: 20px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 10px rgba(74, 20, 140, 0.3);
         }
 
-        .action-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(74, 20, 140, 0.4);
-        }
-
-        /* --- DETAILS LIST --- */
         .details-list {
             list-style: none;
             padding: 0 30px;
             text-align: left;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .details-list li {
-            padding: 15px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #eee;
             color: var(--text-color);
             display: flex;
@@ -127,20 +126,36 @@
             font-size: 15px;
         }
 
-        .details-list li:last-child {
-            border-bottom: none;
-        }
-
         .details-list i {
             color: var(--primary-color);
-            width: 35px;
-            font-size: 20px;
+            width: 30px;
+            font-size: 18px;
             margin-right: 10px;
         }
 
         .details-list a {
             text-decoration: none;
             color: var(--text-color);
+        }
+
+        .save-btn {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .save-btn:active {
+            transform: scale(0.95);
         }
     </style>
 </head>
@@ -149,18 +164,19 @@
     <div class="card-container">
         <div class="header"></div>
 
-        <img src="image_0.png" alt="Narayana Business School Logo" class="profile-img">
+        <img src="image_0.png" alt="Logo" class="profile-img">
 
         <div class="info">
-            <h1 class="name">NARAYANA BUSINESS SCHOOL</h1>
-            <p class="designation">Learn | Lead | Transform</p>
+            <p class="school-name">Narayana Business School</p>
+            <h1 class="person-name">Divyesh Dabgar</h1>
+            <span class="designation">IT Department</span>
         </div>
 
         <div class="actions">
-            <a href="tel:+918401717597" class="action-btn" title="Call Now"><i class="fas fa-phone-alt"></i></a>
-            <a href="https://wa.me/918401717597" class="action-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:it@nbs.edu.in" class="action-btn" title="Send Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://maps.app.goo.gl/ipy5hqigREnFPY338" target="_blank" class="action-btn" title="View Location"><i class="fas fa-map-marked-alt"></i></a>
+            <a href="tel:+918401717597" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+            <a href="https://wa.me/918401717597" class="action-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:it@nbs.edu.in" class="action-btn"><i class="fas fa-envelope"></i></a>
+            <a href="https://maps.app.goo.gl/ipy5hqigREnFPY338" target="_blank" class="action-btn"><i class="fas fa-map-marked-alt"></i></a>
         </div>
 
         <ul class="details-list">
@@ -174,12 +190,47 @@
             </li>
             <li>
                 <i class="fas fa-location-dot"></i> 
-                <a href="https://maps.app.goo.gl/ipy5hqigREnFPY338" target="_blank">Tap to view College Location</a>
+                <a href="https://maps.app.goo.gl/ipy5hqigREnFPY338" target="_blank">Narayana Business School</a>
             </li>
         </ul>
 
+        <button onclick="downloadVCard()" class="save-btn">
+            <i class="fas fa-user-plus"></i> Save Contact
+        </button>
+
     </div>
+
+    <script>
+        function downloadVCard() {
+            var firstName = "Divyesh";
+            var lastName = "Dabgar";
+            var org = "Narayana Business School";
+            var phone = "+918401717597";
+            // Updated Email Variable for vCard
+            var email = "it@nbs.edu.in"; 
+            
+            var saveAsName = "IT Divyesh Dabgar Narayana Business School"; 
+
+            var vCardData = 
+                "BEGIN:VCARD\n" +
+                "VERSION:3.0\n" +
+                "FN:" + saveAsName + "\n" +
+                "N:" + lastName + ";" + firstName + ";;;\n" +
+                "ORG:" + org + "\n" +
+                "TEL;TYPE=CELL:" + phone + "\n" +
+                "EMAIL;TYPE=WORK:" + email + "\n" +
+                "END:VCARD";
+
+            var blob = new Blob([vCardData], { type: "text/vcard" });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = "Divyesh_NBS.vcf";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
 
 </body>
 </html>
-
